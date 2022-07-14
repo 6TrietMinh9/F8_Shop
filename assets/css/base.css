@@ -8,6 +8,8 @@
     --border-color: #dbdbdb;
     --rating-color: #ffce3d;
 
+    --primary-color-hover: #fc7b61;
+
     --header-height: 120px;
     --navbar-height: 34px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
@@ -225,4 +227,34 @@ ul {
 }
 .select-input__link:hover {
     color: var(--primary-color);
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-item {
+    margin: 0 12px;
+}
+.pagination-item--active .pagination-item__link {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    transition: var(--background-transition);
+}
+.pagination-item--active .pagination-item__link:hover {
+    background-color: var(--primary-color-hover);
+}
+.pagination-item__link {
+    --height: 30px;
+    display: block;
+    min-width: 40px;
+    height: var(--height);
+    line-height: var(--height);
+    border-radius: var(--border-radius);
+    font-size: 2rem;
+    color: #939393;
+    text-align: center;
+    text-decoration: none;
 }
