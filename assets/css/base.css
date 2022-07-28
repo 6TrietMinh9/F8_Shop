@@ -13,6 +13,7 @@
     --header-height: 120px;
     --navbar-height: 34px;
     --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+    --header-sort-bar-height: 46px;
 
     --top-gap: calc(100% + 4px);
     --box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
@@ -32,6 +33,7 @@ html {
     line-height: 1.6rem;
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 ul {
@@ -41,16 +43,6 @@ ul {
 }
 
 /* Responsive */
-.grid {
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.grid__full-width {
-    width: 100%;
-}
-
 .grid__row {
     display: flex;
     flex-wrap: wrap;
