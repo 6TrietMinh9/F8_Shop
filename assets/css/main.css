@@ -660,7 +660,7 @@
     position: absolute;
     z-index: 10;
     top: var(--top-gap);
-    right: 50px;
+    right: 2px;
     background-color: var(--white-color);
     width: 400px;
     border-radius: var(--border-radius);
